@@ -1,0 +1,12 @@
+version: '3.9'
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: depozio
+      POSTGRES_PASSWORD: depozio
+      POSTGRES_DB: depozio
+    ports: ['5432:5432']
+  redis:
+    image: redis:7
+    ports: ['6379:6379']
